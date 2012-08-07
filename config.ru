@@ -5,6 +5,7 @@ require 'faye'
 
 
 require File.expand_path('../config/initializers/faye_token.rb', __FILE__)
+Faye.Transport.WebSocket.isUsable = function(_,c) { c(false) }
 
 class ServerAuth
   def incoming(message, callback)
