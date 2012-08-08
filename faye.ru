@@ -1,3 +1,5 @@
+// websocket support
+
 require 'faye'
 
 
